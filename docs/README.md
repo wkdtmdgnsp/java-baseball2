@@ -7,7 +7,7 @@
 - [x] 볼 갯수 구하는 기능 -BaseballGame#getBall()
 - [x] 점수 출력 기능 -OutputView#printScore()
 - [ ] 재시작 및 종료 기능 -BaseballGame#retry()
-    - [] 재시작 여부 입력 기능 -InputView#readRetry()
+    - [x] 재시작 여부 입력 기능 -InputView#readRetry()
 - [x] 예외 처리 기능
     - [x] 숫자가 아닌 경우 예외 처리 기능 -UserValidate#NumberException()
     - [x] 중복 예외 처리 기능 -UserValidate#overlapException()

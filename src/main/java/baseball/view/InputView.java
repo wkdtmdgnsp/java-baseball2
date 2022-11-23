@@ -18,7 +18,13 @@ public class InputView {
         }
     }
 
-    public int readRetry() {
-        return 0;
+    public String readRetry() {
+        String num = Console.readLine();
+        try {
+            userValidate.retryException(num);
+        } catch (IllegalArgumentException e) {
+            throw new IllegalArgumentException();
+        }
+        return num;
     }
 }
