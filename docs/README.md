@@ -9,7 +9,7 @@
     - [ ] 재시작 및 종료 입력 기능 -InputView#readRetry()
 - [ ] 예외 처리 기능
     - [x] 숫자가 아닌 경우 예외 처리 기능 -UserValidate#NumberException()
-    - [ ] 중복 예외 처리 기능 -UserValidate#overlapException()
+    - [x] 중복 예외 처리 기능 -UserValidate#overlapException()
     - [ ] 0이 포함 된 경우 예외 처리 기능 -UserValidate
     - [ ] 범위를 넘는 경우 예외 처리 기능 -UserValidate
 

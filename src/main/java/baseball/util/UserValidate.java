@@ -19,7 +19,13 @@ public class UserValidate {
         return nums;
     }
 
-
+    public void overlapException(List<Integer> nums) {
+        Set<Integer> set = new HashSet<>(nums);
+        if (set.size() != 3) {
+            System.out.println("[ERROR] 중복되지 않는 숫자를 입력해주세요.");
+            throw new IllegalArgumentException();
+        }
+    }
 
 
 }
