@@ -4,8 +4,8 @@
 - [x] 1에서 9까지 서로 다른 임의의 수 3개 생성 하는 기능 -RandomNumber#createRandomNumber()
 - [x] 숫자를 입력 받는 기능 -InputView#readNumber()
 - [x] 스트라이크 갯수 구하는 기능 -BaseballGame#getStrike()
-- [x] 볼 갯수 구하는 기능 -BaseballGame#getStrike()
-    - [ ] 점수 출력 기능 -OutputView#printScore()
+- [x] 볼 갯수 구하는 기능 -BaseballGame#getBall()
+- [x] 점수 출력 기능 -OutputView#printScore()
 - [ ] 재시작 및 종료 기능 -BaseballGame#retry()
     - [ ] 재시작 및 종료 입력 기능 -InputView#readRetry()
 - [ ] 예외 처리 기능
