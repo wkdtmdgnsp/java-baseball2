@@ -11,7 +11,7 @@ public class BaseballGame {
 
     public int getStrike(BaseballGame user) {
         int strike = 0;
-        for (int i : user.numbers) {
+        for (int i=0; i<numbers.size(); i++) {
             if (numbers.get(i) == user.numbers.get(i)) {
                 strike++;
             }
@@ -21,7 +21,7 @@ public class BaseballGame {
 
     public int getBall(BaseballGame user, int strike) {
         int ball = 0;
-        for (int i : user.numbers) {
+        for (int i=0; i<numbers.size(); i++) {
             if (numbers.contains(user.numbers.get(i))) {
                 ball++;
             }
