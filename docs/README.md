@@ -7,12 +7,13 @@
 - [x] 볼 갯수 구하는 기능 -BaseballGame#getBall()
 - [x] 점수 출력 기능 -OutputView#printScore()
 - [ ] 재시작 및 종료 기능 -BaseballGame#retry()
-    - [ ] 재시작 및 종료 입력 기능 -InputView#readRetry()
-- [ ] 예외 처리 기능
+    - [] 재시작 여부 입력 기능 -InputView#readRetry()
+- [x] 예외 처리 기능
     - [x] 숫자가 아닌 경우 예외 처리 기능 -UserValidate#NumberException()
     - [x] 중복 예외 처리 기능 -UserValidate#overlapException()
     - [x] 0이 포함 된 경우 예외 처리 기능 -UserValidate#zeroContainsException()
     - [x] 숫자 범위 예외 처리 기능 -UserValidate#numberRangeException()
+    - [x] 재시작 여부 예외 처리 기능 -UserValidate#retryException()
 
 ## 기능 요구 사항
 기본적으로 1부터 9까지 서로 다른 수로 이루어진 3자리의 수를 맞추는 게임이다.

@@ -53,5 +53,11 @@ public class UserValidate {
         }
     }
 
+    public void retryException(String retry) {
+        if (!retry.contentEquals("1") && !retry.contentEquals("2")) {
+            System.out.println("[ERROR] 1 또는 2를 입력해주세요.");
+            throw new IllegalArgumentException();
+        }
+    }
 
 }
