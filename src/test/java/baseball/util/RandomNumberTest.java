@@ -10,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RandomNumberTest {
-    List<Integer> randomNumber = RandomNumber.createRandomNumber();
+    private List<Integer> randomNumber = RandomNumber.createRandomNumber();
     @Test
     void 숫자_중복_테스트() {
         Set set = new HashSet(randomNumber);
