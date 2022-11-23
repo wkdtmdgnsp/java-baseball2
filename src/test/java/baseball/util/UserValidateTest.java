@@ -43,12 +43,6 @@ class UserValidateTest extends NsTest {
         );
     }
 
-    @Test
-    void 재시작_여부_입력_테스트1() {
-        BaseballController baseballController = new BaseballController();
-        baseballController.retry();
-    }
-
     @Override
     public void runMain() {
         Application.main(new String[]{});
