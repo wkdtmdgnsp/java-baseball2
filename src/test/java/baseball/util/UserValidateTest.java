@@ -1,6 +1,7 @@
 package baseball.util;
 
 import baseball.Application;
+import baseball.controller.BaseballController;
 import camp.nextstep.edu.missionutils.test.NsTest;
 import org.junit.jupiter.api.Test;
 import static camp.nextstep.edu.missionutils.test.Assertions.assertSimpleTest;
@@ -40,6 +41,12 @@ class UserValidateTest extends NsTest {
                 assertThatThrownBy(() -> runException("1233"))
                         .isInstanceOf(IllegalArgumentException.class)
         );
+    }
+
+    @Test
+    void 재시작_여부_입력_테스트1() {
+        BaseballController baseballController = new BaseballController();
+        baseballController.retry();
     }
 
     @Override

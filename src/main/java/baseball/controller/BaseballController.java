@@ -10,15 +10,14 @@ public class BaseballController {
     private BaseballGame user;
     private InputView inputView = new InputView();
     private OutputView outputView = new OutputView();
+    private int strike = 0;
 
     public void run() {
-        gameStart();
-        readNum();
-        printResult();
+        System.out.println("숫자 야구 게임을 시작합니다.");
+        game();
     }
 
     public void gameStart() {
-        System.out.println("숫자 야구 게임을 시작합니다.");
         computer = new BaseballGame(RandomNumber.createRandomNumber());
     }
 
@@ -32,8 +31,30 @@ public class BaseballController {
     }
 
     public void printResult() {
-        int strike = computer.getStrike(user);
+        strike = computer.getStrike(user);
         int ball = computer.getBall(user, strike);
         outputView.printScore(strike, ball);
+    }
+
+    public void game() {
+        gameStart();
+
+        while (strike != 3) {
+            readNum();
+            printResult();
+        }
+
+        if (strike == 3) {
+            retry();
+        }
+    }
+
+    public void retry() {
+        System.out.println("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
+        String reGame = inputView.readRetry();
+        if (reGame.contentEquals("1")) {
+            strike = 0;
+            game();
+        }
     }
 }
