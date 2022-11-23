@@ -10,7 +10,7 @@
 - [ ] 예외 처리 기능
     - [x] 숫자가 아닌 경우 예외 처리 기능 -UserValidate#NumberException()
     - [x] 중복 예외 처리 기능 -UserValidate#overlapException()
-    - [ ] 0이 포함 된 경우 예외 처리 기능 -UserValidate
+    - [x] 0이 포함 된 경우 예외 처리 기능 -UserValidate#zeroContainsException()
     - [ ] 범위를 넘는 경우 예외 처리 기능 -UserValidate
 
 ## 기능 요구 사항

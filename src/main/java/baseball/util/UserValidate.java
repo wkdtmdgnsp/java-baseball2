@@ -27,5 +27,12 @@ public class UserValidate {
         }
     }
 
+    public void zeroContainsException(List<Integer> nums) {
+        if (nums.contains(0)) {
+            System.out.println("[ERROR] 0을 제외하고 입력해주세요");
+            throw new IllegalArgumentException();
+        }
+    }
+
 
 }
