@@ -6,11 +6,23 @@ import java.util.List;
 import java.util.Set;
 
 public class UserValidate {
+    public List<Integer> readNumberException(String number) {
+        try {
+            List<Integer> nums = numberException(number);
+            numberRangeException(nums);
+            zeroContainsException(nums);
+            overlapException(nums);
+            return nums;
+        } catch (IllegalArgumentException e) {
+            throw new IllegalArgumentException();
+        }
+    }
+
     public List<Integer> numberException(String number) {
         List<Integer> nums = new ArrayList<>();
         try {
-            for (int i=0; i<number.length(); i++) {
-                nums.add(Character.getNumericValue(number.charAt(i)));
+            for (String num : number.split("")) {
+                nums.add(Integer.valueOf(num));
             }
         } catch (NumberFormatException e) {
             System.out.println("[ERROR] 숫자만 입력해주세요.");
