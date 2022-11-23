@@ -1,7 +1,7 @@
 # 숫자 야구 게임
 
 ## 기능 목록
-- [ ] 1에서 9까지 서로 다른 임의의 수 3개 생성 하는 기능 -RandomNumber#createRandomNumber()
+- [x] 1에서 9까지 서로 다른 임의의 수 3개 생성 하는 기능 -RandomNumber#createRandomNumber()
 - [ ] 숫자를 입력 받는 기능 -InputView#readNumber()
 - [ ] 점수 판단 기능 -BaseballGame#score()
     - [ ] 점수 출력 기능 -OutputView#printScore()
