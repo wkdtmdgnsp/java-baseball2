@@ -9,8 +9,24 @@ public class BaseballGame {
         this.numbers = numbers;
     }
 
-    public int score() {
-        return 0;
+    public int getStrike(BaseballGame user) {
+        int strike = 0;
+        for (int i : user.numbers) {
+            if (numbers.get(i) == user.numbers.get(i)) {
+                strike++;
+            }
+        }
+        return strike;
+    }
+
+    public int getBall(BaseballGame user, int strike) {
+        int ball = 0;
+        for (int i : user.numbers) {
+            if (numbers.contains(user.numbers.get(i))) {
+                ball++;
+            }
+        }
+        return ball - strike;
     }
 
     public void retry() {
